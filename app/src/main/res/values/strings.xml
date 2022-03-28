@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spiner_CheckBox</string>
+    <array name="spintjob">
+        <item>Nghề nghiệp</item>
+        <item>Sinh viên</item>
+        <item>Giảng viên</item>
+        <item>NVVP</item>
+        <item>Xây dựng</item>
+        <item>Khác</item>
+    </array>
+</resources>

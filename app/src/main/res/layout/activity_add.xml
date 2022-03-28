@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/anh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:drawableLeft="@drawable/ic_baseline_android_24"
+                android:drawablePadding="10dp"
+                android:id="@+id/edId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                android:textColor="#FDFCFC"
+                android:textSize="20dp" />
+
+            <EditText
+                android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="10dp"
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="#EFEEEE"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edbrithday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birthday"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColor="#F4F4F4"
+                android:textSize="20dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/spjob"
+                android:entries="@array/spintjob"
+                >
+
+            </Spinner>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rdgrup"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/rdnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Nam"
+                    android:textColor="#EFEBEB"
+                    android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                    android:drawablePadding="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdnu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Nữ"
+                    android:textColor="#EDE5E5"
+                    android:drawableLeft="@drawable/ic_baseline_perm_contact_calendar_24"
+                    android:drawablePadding="10dp"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bntadd"
+                android:layout_width="142dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#121111"
+                android:drawableLeft="@drawable/ic_baseline_add_24" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
